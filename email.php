@@ -1,6 +1,6 @@
 <?php
 
-$to = 'info@mobillers.com';
+$to = 'mail@mobillers.com';
 
 $subject = 'Formulario de Contacto';
 
@@ -29,9 +29,9 @@ $message = '
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-$headers[] = 'To: Info <info@mobillers.com>';
+$headers[] = 'To: Info <mail@mobillers.com>';
 
-$headers[] = 'From: Contacto <info@mobillers.com>';
+$headers[] = 'From: Contacto <mail@mobillers.com>';
 
 mail($to, $subject, $message, implode("\r\n", $headers));
 
