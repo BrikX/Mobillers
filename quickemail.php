@@ -1,7 +1,7 @@
 <?php
 //echo $_POST['num'];
 
-$to = 'info@mobillers.com';
+$to = 'mail@mobillers.com';
 
 $subject = 'Solicitar Llamado';
 
@@ -21,9 +21,9 @@ $message = '
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-$headers[] = 'To: Info <info@mobillers.com>';
+$headers[] = 'To: Info <mail@mobillers.com>';
 
-$headers[] = 'From: Solicitar Llamado <info@mobillers.com>';
+$headers[] = 'From: Solicitar Llamado <mail@mobillers.com>';
 
 mail($to, $subject, $message, implode("\r\n", $headers));
 
