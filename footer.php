@@ -111,25 +111,6 @@
    });
 </script>
 
-<script type="text/javascript">
-window.onload = function() {
- 
-var ln = x=window.navigator.language||navigator.browserLanguage;
-
-if(ln == 'en'){
-window.location.href = 'http://www.mobillers.com/en/index.php';
-}else if(ln == 'pt'){
-window.location.href = 'http://www.mobillers.com/br/index.php';
-}else{
-window.location.href = 'http://www.mobillers.com/';
-}
- 
-// window.location.href = '/" + ln[0] + ln[1] + ".html';//
- 
-}
-</script>
-
-
 <script>
 $(function() {
     var pgurl = window.location.href.substr(window.location.href
