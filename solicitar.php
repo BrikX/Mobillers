@@ -264,7 +264,7 @@ $proyecto = $_POST['proyecto'];
 
 //echo 'Nom: '.$nom.' <br />Email: '.$email.' <br />Tel: '.$tel.' <br />Tipo: '.$tipo.' <br />Opciones: '.$opciones <br />UIUX: '.$uiux.' <br />Prototipos: '.$prototipos.' <br />Marketing:'.$marketing.' <br /> VideoWall o Stand:'.$wallostand.' <br />Administracion Remota: '.$adminremota.' <br />Instalacion: '.$instalacion.' <br />Cantidad Pantallas: '.$cantpantallas.' <br />Mensaje: '.$idea;
 
-$to = 'info@mobillers.com';
+$to = 'mail@mobillers.com';
 
 $subject = 'Solicitar Presupuesto';
 
@@ -294,9 +294,9 @@ $message = '
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-$headers[] = 'To: Info <info@mobillers.com>';
+$headers[] = 'To: Info <mail@mobillers.com>';
 
-$headers[] = 'From: Mobillers Web <info@mobillers.com>';
+$headers[] = 'From: Mobillers Web <mail@mobillers.com>';
 
 mail($to, $subject, $message, implode("\r\n", $headers));
 
